@@ -611,6 +611,15 @@ namespace PluginAPI.Core
 			get => ((AhpStat)ReferenceHub.playerStats.StatModules[0]).CurValue;
 			set => ((AhpStat)ReferenceHub.playerStats.StatModules[0]).CurValue = value;
 		}
+		
+		/// <summary>
+		/// Gets or sets the scp's current hs;
+		/// </summary>
+		public float ScpHS
+		{
+			get => ((HumeShieldStat)x.ReferenceHub.playerStats.StatModules[4]).CurValue;
+			set => ((HumeShieldStat)x.ReferenceHub.playerStats.StatModules[4]).CurValue = value;
+		}
 
 		/// <summary>
 		/// Gets the player's current maximum artifical health.
